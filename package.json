@@ -1,0 +1,23 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.3.0",
+    "discord-api-types": "^0.37.16",
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "webdriverio": "^7.26.0"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^7.26.0",
+    "nodemon": "^2.0.20"
+  }
+}
