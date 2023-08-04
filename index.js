@@ -4,9 +4,6 @@ const { Client,Collection,GatewayIntentBits, Routes,REST, Options} = require('di
 const config = require('./config.json');              //token file
 const commands = require('./commands.js');
 const getChampion = require('./getChampionUBFunc.js');
-//const {Builder, By} = require('selenium-webdriver');
-//let chrome = require('selenium-webdriver/chrome');
-
 
 
 
@@ -122,13 +119,6 @@ client.on('messageCreate',async (message)=>{     //считывание сооб
             }
         }
     }catch (err){    }
-    //if(message.author.id !== '1037022752235860028'){
-    //   message.channel.send({
-    //       files:[
-    //           "https://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/Karthus.png"
-    //       ]
-    //   });
-    //
 })
 
 
@@ -159,7 +149,6 @@ const commandCreate = {
         const urlnameobject = await getChampion(obj.value);
         interaction.channel.send({
             files:[
-                // `./lolimages/image${urlnameobject.name}.png`
                 `./lolimages/screenshot.png`
             ]
         })
@@ -189,9 +178,6 @@ const commandCreate = {
         }
         interaction.reply('людей пожалуйста через пробел');
         console.log(ubgameobj[interaction.user.id]);
-        //console.log(ubgameobj);
-       // delete ubgameobj[interaction.user.id];
-        //console.log(ubgameobj);
     }
 }
 
